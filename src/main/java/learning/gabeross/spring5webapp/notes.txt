@@ -1,0 +1,14 @@
+* JPA is an ORM
+
+* "leakage" describes us giving JPA an identity value to assign to these classes, and this value
+  "leaks up" into the object models we've defined
+    * the identity value is so that JPA knows how to store and retrieve objects of these
+      types into a database
+
+* defining these entities allows hibernate to persist them (?) into a database
+
+* Spring uses MVC (model-view-controller) design patters (used in a lot of GUI or web apps)
+    * client makes request to controller
+    * controller fetches model (plain old java object), returns model to view
+    * controller is just a traffic cop - just tells you where to look, doesn't handle stuff like db connections
+    * the view reads in the model and renders the view for the client (ex. generating HTML to return to client)
