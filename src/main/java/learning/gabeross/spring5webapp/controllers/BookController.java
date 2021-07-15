@@ -24,6 +24,9 @@ public class BookController {
         model.addAttribute("books", bookRepository.findAll());
 
         // this is the view name that it is returning back
-        return "books";
+        // we're telling it to return the list template in the directory "books"
+        // I guess it auto-looks in template directory and we're telling it to look
+        // for a file named "list" in the directory "books" in the directory "templates"
+        return "books/list";
     }
 }

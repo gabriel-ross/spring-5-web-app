@@ -12,3 +12,8 @@
     * controller fetches model (plain old java object), returns model to view
     * controller is just a traffic cop - just tells you where to look, doesn't handle stuff like db connections
     * the view reads in the model and renders the view for the client (ex. generating HTML to return to client)
+
+* There are plenty of templating frameworks for generating html when throwing stuff on a webpage
+
+* We'll be using "Thyme leaf" - a natural templating agent -> essentially a dynamic html file that
+  can generate html elements using variables spring passes it
